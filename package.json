@@ -1,0 +1,29 @@
+{
+  "name": "hooksmith",
+  "version": "1.2.0",
+  "description": "A package to generate custom reack hooks in your react/next project",
+  "main": "index.js",
+  "repository": {
+    "url": "git+https:///github.com/IrfanKhan66/hooksmith.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/IrfanKhan66/hooksmith#readme",
+  "bugs": {
+    "url": "https://github.com/IrfanKhan66/hooksmith/issues"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "react-hooks-generator",
+    "react-custom-hooks",
+    "nextjs-hooks",
+    "custom-hooks"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "src/index.js",
+  "author": "Irfan Khan",
+  "license": "CC BY-NC-ND 4.0"
+}
