@@ -1,10 +1,10 @@
 {
   "name": "hooksmith",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A package to generate custom reack hooks in your react/next project",
   "main": "index.js",
   "repository": {
-    "url": "https:///github.com/IrfanKhan66/hooksmith.git",
+    "url": "https://github.com/IrfanKhan66/hooksmith.git",
     "type": "git"
   },
   "homepage": "https://github.com/IrfanKhan66/hooksmith#readme",
