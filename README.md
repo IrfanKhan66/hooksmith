@@ -53,7 +53,7 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 ## License
 
- Hooksmith is licensed under the [Apache License 2.0](LICENSE).
+ Hooksmith is licensed under the [Creative Commons License](LICENSE).
 
 ## Support
 
