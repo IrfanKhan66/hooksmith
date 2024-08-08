@@ -1,0 +1,19 @@
+import { useRef, useState } from 'react';
+
+function useFocus() {
+  const [isFocused, setIsFocused] = useState(false);
+  const ref = useRef(null);
+
+  const onFocus = () => setIsFocused(true);
+  const onBlur = () => setIsFocused(false);
+
+  const setFocus = () => {
+    if (ref.current) {
+      ref.current.focus();
+    }
+  };
+
+  return { ref, isFocused, onFocus, onBlur, setFocus };
+}
+
+export default useFocus;
