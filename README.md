@@ -11,6 +11,10 @@ To generate a hook, run the following command:
 ```bash
 npx hooksmith hookName destination-folder
 ```
+or
+```bash
+npx hooksmith hook-name destination-folder
+```
 
 ## Features
 
@@ -29,6 +33,10 @@ To use a hook in your React/Next.js project, simply follow these steps:
    ```bash
    npx hooksmith useDebounce src/hooks
    ```
+   or
+    ```bash
+   npx hooksmith use-debounce src/hooks
+   ```
 2. Import the hook into your component:
    ```javascript
    import useDebounce from '@/hooks/useDebounce';
@@ -46,7 +54,7 @@ We welcome contributions from the community! If you'd like to contribute, please
    - `git checkout -b fix/bug-fix-name`
    - `git checkout -b docs/your-documentation-update`
    - `git checkout -b refactor/your-code-refactor`
-3. To add a new hook, create a new file in the `src/hooks` directory and name it according to the hook name in **camelCase**.
+3. To add a new hook, create a new .txt file in the `src/hooks` directory and name it according to the hook name in **kebab-case**.
 4. Add your changes and commit them with a descriptive commit message with the issue number if applicable.
 5. Push your changes to your forked repository.
 6. Create a pull request to the main repository.

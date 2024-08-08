@@ -2,6 +2,7 @@
 const fs = require("fs");
 const genHook = require("./utils/genHook");
 const path = require("path");
+const {renameFromCamelToKebab} = require("./utils/methods");
 
 function main() {
     
@@ -11,7 +12,7 @@ function main() {
         process.exit(1);
     }
 
-    const hookName = args[0];
+    const hookName = renameFromCamelToKebab(args[0]);
     const destination = args[1] || "hooks";
 
     const hooksDir = path.resolve(__dirname, '../hooks');

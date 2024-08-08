@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const {renameFromKebabToCamel} = require("./methods");
 
 const genHook = (hookName, folderPath) => {
     try {
@@ -13,12 +14,12 @@ const genHook = (hookName, folderPath) => {
         if (!fs.existsSync(finalPath)) {
             fs.mkdirSync(finalPath, { recursive: true });
         }
-        const filePath = path.join(finalPath, `${hookName}.js`);
+        const filePath = path.join(finalPath, `${renameFromKebabToCamel(hookName)}.js`);
         fs.writeFileSync(filePath, data, {
             encoding: "utf8",
         });
 
-        console.log(`${hookName} hook successfully generated in ${path.relative("../",path.join(folderPath, `${hookName}.js`))} !`);
+        console.log(`${renameFromKebabToCamel(hookName)} hook successfully generated in ${path.relative("../",path.join(folderPath, `${renameFromKebabToCamel(hookName)}.js`))} !`);
 
     } catch(err) {
         console.error(`Failed to generate hook ! ${err}`);
